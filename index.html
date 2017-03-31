@@ -11,7 +11,12 @@
   h2{color: blue;}
 </style> -->
 <h2>So now, because of my styling using CSS rather than inline style, this is blue. This replaces the previous styling I had for all h2.</h2>
-<style>.blue-text {color: blue;} </style>
+<style>
+  .blue-text {color: blue;} 
+  .larger-image {width: 500px;}
+  .thin-blue-rounded-border {border-color: blue; border-width: 5px; border-style: solid; border-radius: 10px;
+  .orange-border {border-color: orange; border-width: 10px; border-style: solid; border-radius: 50%}
+</style>
 <!-- so now, I can just call this CSS class I just created for color like this: -->
 <h2 class="blue-text">CatPhotoApp</h2>
 <!-- CSS class selectors require a . at the beginning, but class declarations don't use a . -->
@@ -28,12 +33,10 @@ h2{font-family: Sans-serf;} <!-- this does the font. You can also apply a Google
 <img class="larger-image thin-blue-border" src="https://i.stack.imgur.com/tx5LG.jpg" alt="Electronic brain. ">
 <!-- you can set the width (and border, etc.) of a picture too using a CSS property called width that controls an element's width. Just call the class before the src with a space in between. The border radius CSS property could be applied to the img .larger-image or .thin-blue-border classes-->
 <style>
-  .larger-image {width: 500px;}
-  .thin-blue-rounded-border {border-color: blue; border-width: 5px; border-style: solid; border-radius: 10px;
-  .thick-orange-circular-border {border-color: orange; border-width: 10px; border-style: solid; border-radius: 50%}
+
 </style>
 <!-- you can also specify a border-radius using a percentage, so a border radius of 50% makes a perfect circle -->
-<img class="thick-orange-circular-border" scrc="http://vignette3.wikia.nocookie.net/powerlisting/images/e/e2/Colorful_Electrical_Wires_6_by_FantasyStock.jpg/revision/latest?cb=20130415002416" alt="Wires.">
+<img class="orange-border" scrc="http://vignette3.wikia.nocookie.net/powerlisting/images/e/e2/Colorful_Electrical_Wires_6_by_FantasyStock.jpg/revision/latest?cb=20130415002416" alt="Wires.">
 
 <p>Here's a <a href="http://freecodecamp.com"> link to Free Code Camp</a> for you to follow.</p>
-
+<!-- use a # in place of href attribute when you don't know what link you'll use, making it a dead link -->
