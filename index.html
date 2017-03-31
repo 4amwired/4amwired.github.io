@@ -25,11 +25,11 @@ Eg:
 h2{font-family: Sans-serf;} <!-- this does the font. You can also apply a Google font by making a call to Google (eg: <link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet" type="text/css">) and putting that at the top of your code and then you can list the font just as you did before -->
 <!-- if one font isn't available, you can have your browser "degrade" to another font by listing the fonts like this: font-family: Helvetica, Sans-Serif; -->
 <!-- to add images, use the img element and point to a specific image's URL. All img elements MUST have an alt attribute, which is used for screen readers to improve accessibility and is displayed if the image can't load: -->
-<img class="larger-image" "thin-blue-border" src="https://i.stack.imgur.com/tx5LG.jpg" alt="Electronic brain. ">
-<!-- you can set the width (and border, etc.) of a picture too using a CSS property called width that controls an element's width. Just call the class before the src with a space in between.-->
+<img class="larger-image thin-blue-border" src="https://i.stack.imgur.com/tx5LG.jpg" alt="Electronic brain. ">
+<!-- you can set the width (and border, etc.) of a picture too using a CSS property called width that controls an element's width. Just call the class before the src with a space in between. The border radius CSS property could be applied to the img .larger-image or .thin-blue-border classes-->
 <style>
   .larger-image {width: 500px;}
-  .thin-blue-border {border-color: blue; border-width: 5px; border-style: solid;
+  .thin-blue-rounded-border {border-color: blue; border-width: 5px; border-style: solid; border-radius: 10 px;
 </style>
 
 
