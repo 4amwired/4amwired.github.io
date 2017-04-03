@@ -29,21 +29,21 @@ anim id est laborum -->
 <!-- so now, I can just call this CSS class I just created for color like this: -->
 <h2 class="blue-text">CatPhotoApp</h2>
 <!-- CSS class selectors require a . at the beginning, but class declarations don't use a . -->
-h1{font-size: 30px;} <!--this makes it so all h1 tags has that font. If I used a .h2font class (it's signified a class by the .), then I'd have to call it first). and a class is more specific than a tag and it trumps it. 
+<!--h1{font-size: 30px;} this makes it so all h1 tags has that font. If I used a .h2font class (it's signified a class by the .), then I'd have to call it first). and a class is more specific than a tag and it trumps it. 
 Eg: 
 <style>  
   p {font-size: 16px;}
   .red-text {color: red;}  
 </style> -->
 
-h2{font-family: Sans-serf;} <!-- this does the font. You can also apply a Google font by making a call to Google (eg: <link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet" type="text/css">) and putting that at the top of your code and then you can list the font just as you did before -->
+<!-- h2{font-family: Sans-serf;} this does the font. You can also apply a Google font by making a call to Google (eg: <link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet" type="text/css">) and putting that at the top of your code and then you can list the font just as you did before -->
 <!-- if one font isn't available, you can have your browser "degrade" to another font by listing the fonts like this: font-family: Helvetica, Sans-Serif; -->
 <!-- to add images, use the img element and point to a specific image's URL. All img elements MUST have an alt attribute, which is used for screen readers to improve accessibility and is displayed if the image can't load: -->
 <img class="larger-image thin-blue-border" src="https://i.stack.imgur.com/tx5LG.jpg" alt="Electronic brain. ">
 <!-- you can set the width (and border, etc.) of a picture too using a CSS property called width that controls an element's width. Just call the class before the src with a space in between. The border radius CSS property could be applied to the img .larger-image or .thin-blue-border classes-->
 
 <!-- you can also specify a border-radius using a percentage, so a border radius of 50% makes a perfect circle -->
-<img class="orange-border" scrc="http://vignette3.wikia.nocookie.net/powerlisting/images/e/e2/Colorful_Electrical_Wires_6_by_FantasyStock.jpg/revision/latest?cb=20130415002416" alt="Wires.">
+<img class="orange-border" src="http://vignette3.wikia.nocookie.net/powerlisting/images/e/e2/Colorful_Electrical_Wires_6_by_FantasyStock.jpg/revision/latest?cb=20130415002416" alt="Wires.">
 
 <p>Here's a <a href="http://freecodecamp.com"> link to Free Code Camp</a> for you to follow.</p>
 <!-- use a # in place of href attribute when you don't know what link you'll use, making it a dead link -->
