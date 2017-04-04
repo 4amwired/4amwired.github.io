@@ -79,7 +79,7 @@ Eg:
 
 <!-- don't give the same id attribute to more than one element. eg: <h2 id="cat-photo-app"> -->
 <!-- you always reference CSS classes with a . before hand - with an id, reference with a # -->
-<!-->[hashtag]cat-photo-form {
+<!--> #cat-photo-form {
     background-color: green;
     }  
 you can put that up in your style to make your id attribute a certain background color or what have you -->
@@ -124,7 +124,7 @@ Margin - controls space between element's border and surrounding elements. If an
 
  <!-- you can do the padding all in the same line, like that, rather than top, right, bottom, left -->
 
-<p>every HTML page has a body (the complete background - if it was black here, the entire page would be black)</p>
+<p>every HTML page has a body (the complete background - if it was black here, the entire page would be black </p>
 <!-- This will give you black background, green font (monospace): 
 <style>
   body {
@@ -134,6 +134,16 @@ Margin - controls space between element's border and surrounding elements. If an
   }
 </style> 
 -->
-<p>But class overrides body element's CSS property.</p>
-<p>AND whichever class is listed last takes precedence.</p>
-<p>Further, if you label your element with an id and then style the id, that will take precedence over class</p>
+<h2>But class overrides body element's CSS property.</h2>
+<h2>AND whichever class is listed last takes precedence.</h2>
+<h2>Further, if you label your element with an id and then style the id, that will take precedence over class</h2>
+<p>And beyond even that, inline styles will override id styles as well.</p>
+<h2> adding 
+  color: red !important;
+  to your color's declaration makes it ALWAYS have precedence.</h2>
+<p> replace colors with #000000 (for black) with the hexadecimal system. Each of the 6 hexadecimal digits represents 
+  two colors (2 each for R,G,B. 0 is the lowest and represents an absence of color. F is the highest and represents
+  maximum brightness. You can also shorten hex code (eg: #FF0000 = #F00).</p>
+<p>Then there's RGB code, which gives each color a brightness b/w 0 and 255. It gives as many colors as hex code.
+  Black is rgb(0, 0, 0) and white is rgb(255, 255, 255).</p>
+<h2>Use responsive design so that you don't need to resize your HTML elements for every screen out there!</h2>
