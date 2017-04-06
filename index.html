@@ -176,3 +176,27 @@ Margin - controls space between element's border and surrounding elements. If an
       <a href="#"><img class="img-responsive thick-green-border" src="https://bit.ly/fcc-relaxing-cat" alt="A cute orange cat lying on its back. "></a>
     </div>
     </div>
+
+  <p> use FontAwesome for a bunch of icons in the .svg format. Simple add this to the top of your HTML:
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css"/> </p>
+  <p>Add a FontAwesome icon with an i element<i class="fa fa-thumbs-up"></i> <i class="fa fa-trash"></i> 
+    <i class="fa fa-info-circle"></i><i class="fa fa-paper-plane"></i></p>
+  <p>And now, to spread radio buttons through the page, nest all of your radios buttons in div class="row and each within div class="col-xs-6" </p>
+  <div class="row">
+      <div class="col-xs-6">
+        <label><input type="radio" name="indoor-outdoor">Indoor
+        </label>
+      </div>
+    <div class="col-xs-6">
+      <label><input type="radio" name="indoor-outdoor">Outdoor
+      </label>
+    </div>
+   </div>
+  
+  <p> give your form's text input field a class of form-control. Give your form's submit button the classes btn btn-primary</p>
+  <p> add the class "well" to your div elements for depth.</p>
+  
+  <p> Now, you have to have the jQuery library and the Animate.css library in the background already, but Then use jQuery's .addClass() function to add the classes animated and shake.
+For example, you could make all the elements with the class text-primary shake by adding the following to your document ready function:
+$(".text-primary").addClass("animated shake");
+  </p>
