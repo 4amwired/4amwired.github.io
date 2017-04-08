@@ -198,5 +198,8 @@ Margin - controls space between element's border and surrounding elements. If an
   
   <p> Now, you have to have the jQuery library and the Animate.css library in the background already, but Then use jQuery's .addClass() function to add the classes animated and shake.
 For example, you could make all the elements with the class text-primary shake by adding the following to your document ready function:
-$(".text-primary").addClass("animated shake");  There's also "animated fadeOut" as well.
+$(".text-primary").addClass("animated shake");  There's also "animated fadeOut" as well. And you can target specific things by type ("button"), 
+    class(".btn"), and id("#target1)". You can also removeClass(). 
   </p>
+  <p> Change the the CSS of an element with a jQuery function .css(). Eg: $("#target1").css("color", "blue"); 
+  And this grays out buttons so that they don't work: $("button").prop("disabled", true);
