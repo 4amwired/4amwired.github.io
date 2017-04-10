@@ -223,6 +223,10 @@ $(".text-primary").addClass("animated shake");  There's also "animated fadeOut" 
         $("#target5").clone().appendTo("#left-well");
         $("#target1").parent().css("background-color", "red");
         $("#left-well").children().css("color", "blue");
+        $(".target:nth-child(2)").addClass("animated bounce");
+        $(".target:even").addClass("animated shake");  (and that is for even elements, as opposed to odd elements)
+        And there's animated fadeOut, animated hinge, etc. too
   </p>
   <h2>Children: the elements which inherit properties from their parent HTML elements</h2>
+  <p>target:nth-child(n) css selector lets you select all the nth elements with the target class or element type</p>
   
