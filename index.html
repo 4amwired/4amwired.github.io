@@ -211,6 +211,18 @@ $(".text-primary").addClass("animated shake");  There's also "animated fadeOut" 
     <l1>.appendTo()</l1>
     <l1>.html()</l1>
     <l1>.text()</l1>
+    <l1>.parent()</l1>
+    <l1>.children()</l1>
   </ul>
 
   <p>function chaining - sticking two jQuery functions together.</p>
+  <h2>Parents: the element from which an HTML element inherits properties</h2>
+  <h3>Which is largely gets from whatever it's nested in, it seems.</h3>
+  <p>Some examples of jQuery:
+        $("#target2").appendTo("#right-well");
+        $("#target5").clone().appendTo("#left-well");
+        $("#target1").parent().css("background-color", "red");
+        $("#left-well").children().css("color", "blue");
+  </p>
+  <h2>Children: the elements which inherit properties from their parent HTML elements</h2>
+  
